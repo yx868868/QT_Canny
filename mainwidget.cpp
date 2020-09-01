@@ -36,6 +36,7 @@ void mainWidget::on_openBtn_clicked()
                     "图片 (*.bmp *.jpg *.pbm *.pgm *.png *.ppm *.xbm *.xpm);;所有文件(*.*)");
     if(fileName != "")
     {
+       // 将 image 变量new出来，开辟在堆区 
        QImage *image = new QImage;
         if(image->load(fileName))
         {
@@ -44,6 +45,7 @@ void mainWidget::on_openBtn_clicked()
             ui->formerView->setScene(scene);
             ui->formerView->resize(image->width() + 10, image->height() + 10);
             ui->formerView->show();
+            // 将image传给this 指针，供后续载入图片，用canny后不会再发生闪退
             this->myImage = image;
         }
         else
