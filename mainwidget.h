@@ -44,6 +44,7 @@ private slots:
 private:
     Ui::mainWidget *ui;
     QImage *image;
+    //声明新变量myImage
     QImage *myImage;
 
     cv::Mat Canny_check();//处理 边缘检测
