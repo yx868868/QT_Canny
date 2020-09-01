@@ -1,8 +1,8 @@
 # QT_Canny
 工具：
-Qt-5.14.0
-MinGW-7.3.0-32bit
-CMake-3.16.5
+Qt-5.14.0，
+MinGW-7.3.0-32bit，
+CMake-3.16.5，
 Opencv3.4.7
 
 代码实现的功能为：Qt与OpenCV的图片读取、保存，并利用Canny进行简单的边缘处理，并显示结果
